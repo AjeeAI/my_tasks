@@ -38,4 +38,4 @@ print(f"My name is {my_name}, I am in {my_class} and my best subject is {best_su
 poem = """Green lands rise where proud rivers flow,
 Voices strong in sun’s golden glow,
 Nigeria dances, bold spirits grow."""
-print(poem)
+print(poem, ".")
