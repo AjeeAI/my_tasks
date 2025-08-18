@@ -7,4 +7,3 @@ bio_data = {
 
 for key, values in bio_data.items():
     print(f"{key}:\t {values}")
-    
