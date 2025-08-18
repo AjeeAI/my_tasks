@@ -124,5 +124,9 @@ than 18 and has a score greater than 70.
 # Task 5: Store Inventory Update
 
 store = {"Book": 10, "Pen": 20, "Bag": 5}
-order = input("Enter the name if the item you wish to purchase: ")
+order = input(f"Available items are {store}\nEnter the name if the item you wish to purchase: ").title()
 quantity = int(input(f"Enter the quantity {order} you would like to purchase: "))
+
+store[order] -= quantity
+
+print(store)
