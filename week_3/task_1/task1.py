@@ -1,4 +1,4 @@
-
+# Task 1: Comparison Operations
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 
@@ -22,25 +22,27 @@ This checks if the value for num1 is less than that of num2 and if so displays '
 
 
 
-""" 1.  This comparison check can be used to check if the password entered by a user matches their signup password stored in the database"""
-
 """ 
- 2. It can be used to check for cases where we want to monitor certain activities for example: 
+1.  This comparison check can be used to check if the password entered by a user matches their signup password stored in the database.
+
+2. It can be used to check for cases where we want to monitor certain activities for example: 
  if we want to check if the voltage of power supply exists in a range of given values and does not exceed a certain threshold.
- """
-""" 3. In cybersecurity, we might have to check if the hashes of a file before and after transit is the same to verify that the file has not been tampered with or modified in any way."""
+ 
+3. In cybersecurity, we might have to check if the hashes of a file before and after transit is the same to verify that the file has not been tampered with or modified in any way.
+
+"""
 
 
 
 
 dbUsername = "Adesoji Ajijolaoluwa"
-dbPassword = "Ajee"
+dbPassword = "Ajee4AIDev"
 
 print("Login details".center(80))
 
 print("-" * 80)
 name_entry = input("Enter your username: ")
-password_entry = input("Enter your password here") 
+password_entry = input("Enter your password here: ") 
 
 
 if (name_entry == dbUsername) and (password_entry == dbPassword):

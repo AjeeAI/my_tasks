@@ -1,4 +1,4 @@
-# Task 2
+# Task 2: Scholarship Eligibility Checker
 
 """
 The code receives inputs of name, age and score from the user and 
