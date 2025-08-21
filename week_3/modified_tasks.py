@@ -95,17 +95,60 @@ seat_numbers = set(range(1, 5))
 #      seat_numbers.add(no)
 #      no += 1
 
-while len(seat_numbers) > 0:
-    print(seat_numbers)
-    while True:
-        booking = int(input("Choose from the available seats to book: "))
-        if booking in seat_numbers:
-            print(f"Congratulations. You have successfully booked seat {booking}")
-            seat_numbers.remove(booking)
+# while len(seat_numbers) > 0:
+#     print(seat_numbers)
+#     while True:
+#         booking = int(input("Choose from the available seats to book: "))
+#         if booking in seat_numbers:
+#             print(f"Congratulations. You have successfully booked seat {booking}")
+#             seat_numbers.remove(booking)
             
-            break
-        else:
+#             break
+#         else:
             
-            print(f"This seat, seat{booking} is no longer available")
-            print(f"Available seats are: {seat_numbers}")
-print("All seats have been taken. No more seats available.")
+#             print(f"This seat, seat{booking} is no longer available")
+#             print(f"Available seats are: {seat_numbers}")
+# print("All seats have been taken. No more seats available.")
+
+# Unique Voters registration
+
+# voters = set()
+# while True:
+#     voter = input("Enter your first name and last name: ").title()
+#     if voter not in voters:
+#         if voter != "Exit":
+#             voters.add(voter)
+#     else:
+#         print("You have already registered. Please don't try to register more than once.")
+#         continue
+    
+#     if voter == "Exit":
+#         break
+    
+# print(f"{voters}.\nThis gives us a total of {len(voters)} registered voters.")
+
+bio_data = {}
+while True:
+    student_list = []
+    name = input("Enter student's name: ").title()
+    if name  == "Exit":
+        break
+    else: 
+        age = int(input("Enter the student's age:"))
+        gender = input("Enter the gender: ")
+        bio_data["name"] = name 
+        bio_data["age"] = age
+        bio_data["gender"] = gender
+        
+        courses = []
+        while True:
+            
+            course = input(f"Enter course: ").title()
+            if course == "Done":
+                break
+            else:
+                courses.append(course)
+                print(courses)
+        bio_data["courses"] = courses
+        
+    print(bio_data)
